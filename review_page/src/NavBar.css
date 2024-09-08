@@ -1,0 +1,38 @@
+/* Navbar container */
+.navbar {
+    display: flex;
+    justify-content: space-between; /* Aligns items to the sides */
+    align-items: center;
+    background-color: #0B648F;
+    padding: 10px 20px;
+    position: sticky;
+    top: 0;
+    z-index: 999;
+  }
+  
+  /* Left side (logo and name) */
+  .navbar-logo {
+    display: flex;
+    align-items: center;
+  }
+  
+  .logo-name {
+    color: white;
+    font-size: 24px;
+    margin-left: 10px;
+    font-weight: bold;
+  }
+  
+  .logo-img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+  }
+  
+  /* Right side (points) */
+  .navbar-points {
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+  }
+  

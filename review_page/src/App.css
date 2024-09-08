@@ -1,0 +1,155 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+.App {
+  
+  justify-content: center;
+  align-items: center;
+  margin-top: 150px;
+  display: flex;
+  flex-direction: column;
+  
+}
+
+.container {
+  background-color: #0B648F;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 700px;
+  font-size: 30px;
+  flex-direction: column;
+  border-radius: 50px;
+}
+
+.text {
+  color: white;
+  background-color: #E21737;
+  font-weight: bold;
+  margin-top: 10px;
+  padding: 10px;
+  width: 680px;
+  border-radius: 25px;
+align-items: center;
+justify-content: center;
+display: flex;
+}
+
+.stars{
+  padding: 12px;
+  margin-top:10px;
+}
+.stars>span {
+  cursor: pointer;
+padding: 0 6px;
+}
+
+.selectedStar {
+  color: #ddff00;
+}
+
+.btnDiv {
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  padding: 10px;
+}
+
+.btn {
+  background-color: #E21737;
+  border-radius: 50px;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+.textArea{
+  width:300px;
+  height: 70px;
+}
+
+.popup {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: rgba(0, 0, 0, 0.8);
+  color: white;
+  font-size: 50px;
+  padding: 20px;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  z-index: 1001; /* Higher than overlay */
+  width: 500px;
+}
+
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+  z-index: 1000; /* Layer beneath popup */
+}
+
+.reviewText {
+  margin-top: 10px;
+  font-size: 18px;
+}
+
+.emoji {
+  animation: emojiBounce 1s infinite;
+}
+
+@keyframes emojiBounce {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
+.closeBtn {
+  background-color: #E21737;
+  color: white;
+  border: none;
+  border-radius: 50%;
+  font-size: 20px;
+  padding: 10px;
+  cursor: pointer;
+  width: 42px;
+  margin-top: 20px;
+}
+
+.closeBtn:hover {
+  background-color: #ff3547;
+}
+
+.selectedStar {
+  color: #ddff00;
+}
+
+.starInfoDiv{
+  flex-direction: row;
+  display: flex;
+}
+.starinfo{
+  font-size: 12px;
+  padding: 4px;
+  margin: 4px;
+  cursor: pointer;
+  margin-top: -4px;
+  margin-bottom: 14px;
+}

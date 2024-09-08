@@ -1,0 +1,51 @@
+.home {
+    /* display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px; */
+
+    background-color: #0B648F;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 700px;
+    height: 300px;
+    flex-direction: column;
+    border-radius: 50px;
+}
+
+.choosetakentext{
+    margin-bottom: 20px;
+}
+
+.tokens {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+    flex-flow: row wrap;
+  position: relative;
+ 
+}
+
+.token {
+    background-color: white;
+    color: #000000;
+    font-size: 20px;
+    padding: 15px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+width: 25px;
+
+    flex: 1;
+    flex-basis: 12%;
+}
+
+.token:hover {
+    background-color: #E21737;
+    color: white;
+}
